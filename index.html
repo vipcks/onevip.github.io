@@ -15,7 +15,9 @@
 		var path = get("path")
 		console.log(path)
 		if (path.length > 0){
-			window.location.href = 'http://1.117.201.62' + path
+			if(path.startsWith('/')){
+				window.location.href = 'http://1.117.201.62' + path
+			}
 		}
   }
 </script>
